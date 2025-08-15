@@ -1,0 +1,14 @@
+<div class="text-center mt-10">
+  <div [innerHTML]="$t('_importEnter')" class="mb-4"></div>
+
+  <button nz-button nzType="primary" (click)="onClickFile()">
+    {{ $t('_upload') }}
+  </button>
+  <input
+    #file
+    type="file"
+    (change)="onBookChange($event)"
+    accept="text/html"
+    class="!hidden"
+  />
+</div>

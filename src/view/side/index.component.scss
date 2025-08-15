@@ -1,0 +1,41 @@
+@media (max-width: 768px) {
+  .content {
+    padding-right: 12px !important;
+    padding-left: 10px !important;
+  }
+}
+
+.main {
+  min-height: 100vh;
+  background-color: #f0f2f5;
+  display: flex;
+  .inner-layout {
+    flex: 1;
+    width: 0;
+    display: flex;
+    flex-direction: column;
+    .content {
+      flex: 1;
+      margin-bottom: 2rem;
+      padding: 10px 70px 0 15px;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .box {
+    flex: 1;
+    transition: 0.1s linear;
+  }
+  ::ng-deep {
+    .web-list {
+      padding: 0;
+      .name {
+        font-size: 13px;
+      }
+      .common-icon {
+        border-radius: 2px !important;
+      }
+    }
+  }
+}
